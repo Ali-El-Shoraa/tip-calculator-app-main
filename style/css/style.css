@@ -1,0 +1,294 @@
+/* start global rules */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body,
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input {
+  direction: rtl;
+  border: none;
+  outline: none;
+  background-color: hsl(202.5deg 50% 96.86%);
+}
+
+.container {
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global rules */
+.tip {
+}
+.tip .container {
+  background-color: white;
+  border-radius: 18px;
+  display: flex;
+  width: fit-content;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+}
+@media (max-width: 767px) {
+  .tip .container {
+    flex-direction: column;
+    padding-right: 0;
+  }
+}
+/* start bill */
+.tip .bill {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 450px;
+}
+@media (max-width: 767px) {
+  .tip .bill {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 320px;
+  }
+}
+/* start number */
+.tip .bill h3 {
+  color: #8e999b;
+}
+@media (max-width: 767px) {
+  .tip .bill h3 {
+    font-size: 14px;
+  }
+}
+.tip .bill input {
+  font-size: 24px;
+  font-weight: 700;
+}
+.tip .bill .number #money {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  height: 40px;
+  padding-right: 20px;
+}
+.tip .bill .number #money:focus {
+  border: 2px solid #58a89d;
+}
+.tip .bill .number .div-input {
+  position: relative;
+  margin: 10px 0 30px;
+}
+.tip .bill .number .div-input::before {
+  content: "\24";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-weight: 900;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #8e999b;
+  margin-left: 20px;
+}
+/* end number */
+
+/* start custom */
+.tip .bill .custom .btns {
+  font-size: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  margin: 10px 0 30px;
+}
+.tip .bill .custom .btns .btn {
+  padding: 15px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #00474b;
+  transition: 0.3s;
+  font-weight: 700;
+}
+.tip .bill .custom .btns .btn:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+.tip .bill .custom .btns input {
+  text-align: center;
+  border-radius: 6px;
+}
+.tip .bill .custom .btns input:focus {
+  border: 2px solid #58a89d;
+}
+
+/* end custom */
+
+/* start people */
+
+.tip .bill .people .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tip .bill .people .text #alert {
+  display: none;
+}
+.tip .bill .people input {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  height: 40px;
+  padding-right: 20px;
+}
+.tip .bill .people input:focus {
+  border: 2px solid #58a89d;
+}
+.tip .bill .people .div-input {
+  position: relative;
+  margin-top: 10px;
+}
+.tip .bill .people .div-input::before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-weight: 900;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #8e999b;
+  margin-left: 20px;
+}
+/* end people */
+
+/* end bill */
+
+/* start amount */
+
+.tip .amount {
+  background-color: #00474b;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: normal;
+  width: 350px;
+}
+@media (max-width: 767px) {
+  .tip .amount {
+    margin: 20px auto 0;
+    width: 280px;
+  }
+}
+.tip .amount .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tip .amount h3 {
+  color: white;
+  font-size: 16px;
+}
+.tip .amount span {
+  color: hsl(184.14deg 22.83% 49.8%);
+}
+.tip .amount h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(170.85deg 70.09% 45.88%);
+  font-size: 40px;
+}
+@media (max-width: 767px) {
+  .tip .amount h1 {
+    font-size: 25px;
+  }
+}
+.tip .amount h1 > span {
+  color: hsl(170.85deg 70.09% 45.88%);
+}
+
+.tip .amount .reset {
+  background-color: hsl(183.13deg 78.69% 23.92%);
+  color: hsl(183.83deg 85.45% 21.57%);
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 8px 0;
+  cursor: no-drop;
+}
+/* end amount */
+
+/* start css js */
+.reset-2 {
+  background-color: #26c2ad;
+  color: hsl(183.83deg 85.45% 21.57%);
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reset-2:hover {
+  background-color: #9fe8df;
+}
+
+.btn-1 {
+  padding: 15px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #00474b;
+  transition: 0.3s;
+  font-weight: 700;
+}
+.btn-1:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+.btn-focus {
+  background-color: #26c2ad !important;
+  color: #00474b !important;
+}
+/* end css js */
