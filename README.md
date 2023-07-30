@@ -43,7 +43,7 @@ Users should be able to:
   - Media Queries
   - Normalize - CSS library
 - JavaScript
-- DOM
+  - DOM
 - [Fontawesome](https://fontawesome.com/) - icon library
 - [Fonts Google](https://fonts.google.com/) - font library
 
