@@ -7,7 +7,7 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Links live site](#links-live-site)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -28,7 +28,7 @@ Users should be able to:
 ![Design preview for the Results summary component coding challenge](./design/desktop-design-empty.png)
 ![Design preview for the Results summary component coding challenge](./design/mobile-design.png)
 
-### Links
+### Links Live Site
 
 - Live Site URL: [Add live site URL here](https://ali-el-shoraa.github.io/tip-calculator-app-main/)
 
